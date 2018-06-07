@@ -20,18 +20,18 @@ ms.locfileid: "34631622"
 
 [!INCLUDE [iot-hub-get-started-device-selector](../../includes/iot-hub-get-started-device-selector.md)]
 
-U kunt de [MXChip IoT DevKit](https://microsoft.github.io/azure-iot-developer-kit/) te ontwikkelen en prototype Internet der dingen (IoT) oplossingen die van Microsoft Azure-services gebruikmaken. Het bevat een mededelingenbord Arduino compatibel met uitgebreide randapparatuur en sensoren, een open source mededelingenbord pakket en een groeiende [projecten catalogus](https://microsoft.github.io/azure-iot-developer-kit/docs/projects/).
+U kunt de [MXChip IoT DevKit](https://microsoft.github.io/azure-iot-developer-kit/) gebruiken om Internet der dingen (IoT) (prototype) te  ontwikkelen die van Microsoft Azure-services gebruikmaken. Het bevat een Arduino compatibel bord met uitgebreide randapparatuur en sensoren, een open source bord pakket en een groeiende [projecten catalogus](https://microsoft.github.io/azure-iot-developer-kit/docs/projects/).
 
 ## <a name="what-you-do"></a>Wat u doet
 Verbinding maken met de [DevKit](https://microsoft.github.io/azure-iot-developer-kit/) naar een Azure-IoT-hub die u maakt, kunt u de temperatuur en vochtigheid-gegevens verzamelen van sensoren en de gegevens verzenden naar de IoT-hub.
 
-Heb je nog een DevKit? Probeer [DevKit simulator](https://azure-samples.github.io/iot-devkit-web-simulator/) of [een](https://aka.ms/iot-devkit-purchase).
+Heb je nog een DevKit? Probeer de [DevKit simulator](https://azure-samples.github.io/iot-devkit-web-simulator/) of [koop er een](https://aka.ms/iot-devkit-purchase).
 
 ## <a name="what-you-learn"></a>Wat u leert
 
-* Hoe de IoT DevKit verbinding met een draadloos toegangspunt en uw ontwikkelingsomgeving voorbereiden.
+* Hoe de IoT DevKit verbinding maakt met een draadloos toegangspunt en u uw ontwikkelingsomgeving voorbereiden.
 * Het maken van een IoT-hub en een apparaat registreren voor de IoT MXChip DevKit.
-* Klik hier voor meer informatie over het verzamelen van sensorgegevens door het uitvoeren van een voorbeeld van toepassing op de MXChip IoT DevKit.
+* Hoe je sensorgegevens kan verzamelen door het uitvoeren van een voorbeeld toepassing op de MXChip IoT DevKit.
 * Hoe de sensorgegevens verzendt naar uw IoT-hub.
 
 ## <a name="what-you-need"></a>Wat u nodig hebt
@@ -41,21 +41,21 @@ Heb je nog een DevKit? Probeer [DevKit simulator](https://azure-samples.github.i
 * Een actief Azure-abonnement. [Activeren van een gratis 30-daagse evaluatieversie Microsoft Azure-account](https://azureinfo.microsoft.com/us-freetrial.html).
   
 
-## <a name="prepare-your-hardware"></a>Bereid uw hardware
+## <a name="prepare-your-hardware"></a>Bereid uw hardware voor
 
 De hardware op de computer koppelen.
 
-U moet deze hardware:
+U heeft deze hardware nodig:
 
 * DevKit mededelingenbord
 * Micro USB-kabel
 
 ![Vereiste hardware](media/iot-hub-arduino-devkit-az3166-get-started/getting-started/hardware.jpg)
 
-Sluit de DevKit op uw computer:
+Om de DevKit op uw computer aan te sluiten:
 
-1. Het einde van het USB-verbinding met uw computer.
-2. Het einde Micro-USB-verbinding met de DevKit.
+1. Verbind de USB-verbinding met uw computer.
+2. Verbind de Micro-USB-verbinding met de DevKit.
 3. De groene LED voor power bevestigt de verbinding.
 
 ![Hardwareverbindingen](media/iot-hub-arduino-devkit-az3166-get-started/getting-started/connect.jpg)
@@ -64,15 +64,15 @@ Sluit de DevKit op uw computer:
 
 IoT-projecten zijn afhankelijk van verbinding met internet. Gebruik de volgende instructies voor het configureren van de DevKit verbinding maken met Wi-Fi.
 
-### <a name="enter-ap-mode"></a>Azië modus
+### <a name="enter-ap-mode"></a>Accesspoint modus
 
-Houd B, push en loslaat B. release van de knop herstellen Uw DevKit krijgt AP-modus voor het configureren van Wi-Fi. Het scherm wordt weergegeven de serviceset-id (SSID) van de DevKit en het portal IP-adres.
+Houd B ingedrukt. Druk op de reset knop en laat deze los, laat daarna B los. Uw DevKit komt in de AP-modus voor het configureren van Wi-Fi. Het scherm geeft de serviceset-id (SSID) van de DevKit weer en het portal IP-adres.
 
 ![Opnieuw instellen van de knop, knop B en SSID](media/iot-hub-arduino-devkit-az3166-get-started/getting-started/wifi-ap.jpg)
 
-### <a name="connect-to-devkit-ap"></a>Verbinding maken met DevKit Azië
+### <a name="connect-to-devkit-ap"></a>Verbinding maken met DevKit AP
 
-Gebruik een ander ingeschakeld voor de Wi-Fi-apparaat (computer of mobiele telefoon) nu verbinding maken met de DevKit SSID (gemarkeerd in de vorige afbeelding). Het wachtwoord leeg laten.
+Gebruik een ander apparaat dat geschikt is voor een Wi-Fi verbinding (computer of mobiele telefoon). Maak nu verbinding met de DevKit SSID (gemarkeerd in de vorige afbeelding). Laat het wachtwoord leeg.
 
 ![Netwerkgegevens- en knop verbinding maken](media/iot-hub-arduino-devkit-az3166-get-started/getting-started/connect-ssid.png)
 
